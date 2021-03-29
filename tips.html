@@ -31,6 +31,25 @@
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+
 
 </head>
 
@@ -59,7 +78,7 @@
                             <ul id="menu" class="sf-menu">
                                 <li class="menu-item menu-item-has-children"><a href="index.html">Home</a></li>
                                 <li class="menu-item menu-item-has-children"><a href="news.html">NEWS</a></li>
-                                <li class="menu-item menu-item-has-children"><a href="index.html">TIPS</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="tips.html">TIPS</a></li>
                                 <li class="menu-item menu-item-has-children"><a href="index.html">CALCULATOR</a></li>
                             </ul>
                         </div>
@@ -80,15 +99,26 @@
 
     <!-- Start Main -->
     <section id="main">
-        <div id="page">
+        <body>
 
+        <div class="tw-element waves-heading default center col-md-12" style="">
+            <h3 class="heading-title"><span>HELPFUL TIPS FOR YOU</span> <span class="title-seperator"><i class="default"><span></span><span></span></i></span></h3>
+            <p>
 
-
-
-
-
-
+            </p>
         </div>
+    Î
+
+        <div class="row">
+            <div class="column">
+                <img src="upload/tip1.jpeg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="upload/tip2.png" alt="Forest" style="width:100%">
+            </div>
+        </div>
+
+        </body>
     </section>
     <!-- End Main -->
 
@@ -136,7 +166,7 @@
                                 <a href="news.html">News</a>
                             </li>
                             <li>
-                                <a href="#">Tips</a>
+                                <a href="tips.html">Tips</a>
                             </li>
                             <li>
                                 <a href="#">Calculator</a>
